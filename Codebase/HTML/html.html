@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width,initial-scale=1">
+        <title>HTML</title>
+        <link rel="stylesheet" href="../CSS/html.css">
+        <script src="../SCRIPTS/HTML.js"></script>
+    </head>
+    <header>
+        <div class="logo-container">
+            <img src="../IMG/LogoHTML.jpg" alt="Logo HTML" class="logo-container" width="100" height="100">
+        </div>
+     <nav class="header-nav">
+            <a href="index.html">Accueil</a>
+          <a href="HTML.html">HTML</a> 
+          <a href="CSS.html">CSS</a> 
+          <a href="javascript.html" >JavaScript</a>
+          <a href="editeurH.html">Editeur de Code </a>
+    </nav>
+</header>
+    <body>
+        <p class="message">Bienvenue sur notre page de programation html ,comme son nom l'indique nous apprendrons le langage de programation html . </p>
+        <p>Tout d'abord commençons avec son introduction </p>
+        <p>Le langage de programmation HTML est un langage de balisage utilisé pour créer des pages web. Il a été créé par Tim Berners-Lee en 1991 et est devenu la norme pour la création de contenu sur le web. HTML utilise des balises pour structurer le contenu, ce qui permet aux navigateurs de rendre les pages de manière cohérente.</p>
+        <p>HTML est un acronyme pour HyperText Markup Language, ce qui signifie que c'est un langage de balisage qui permet de créer des liens hypertextes entre différentes pages web. Les balises HTML sont entourées de chevrons (<>) et sont généralement utilisées par paires, avec une balise d'ouverture et une balise de fermeture. Par exemple, la balise <p> est utilisée pour créer un paragraphe, tandis que la balise </p> indique la fin du paragraphe.</p>
+        <p>HTML est un langage statique, ce qui signifie qu'il ne peut pas être utilisé pour créer des applications interactives ou dynamiques. Cependant, il peut être combiné avec d'autres langages de programmation, tels que JavaScript et CSS, pour créer des pages web plus complexes et interactives.</p>
+        <p>HTML est également utilisé pour structurer le contenu d'une page web, en définissant des éléments tels que les titres, les paragraphes, les listes
+, les images et les liens. Il permet également d'ajouter des attributs aux balises pour personnaliser leur apparence et leur comportement.</p>
+        <p>En résumé, le langage de programmation HTML est un langage de balisage essentiel pour la création de pages web. Il permet de structurer le contenu et de créer des liens hypertextes entre différentes pages, tout en étant facilement combinable avec d'autres langages pour créer des applications web plus complexes.</p>
+        <p>Voici ci-dessous la documentation concernant ce langage de programmation </p>
+        <h1>Documentation HTML</h1>
+        <table>
+            <tr>
+                <th class="Categorie">Categorie</th>
+                <th>Chaque élément HTML est membre d'un certain nombre de catégories de contenu qui regroupent des éléments partageant un ensemble de caractéristiques. Ceci est un regroupement lâche, en ce sens qu'il ne crée pas réellement de relation entre les éléments de ces types, mais il aide à définir et à décrire leur comportement et les règles associées qu'ils doivent respecter, en particulier lorsque l'on entre dans leurs détails complexes. Il est également possible que les éléments ne soient membres d'aucune de ces catégories.</th>
+
+
+Il y a trois types différents de catégories de contenu :
+
+Les catégories de contenu principales qui décrivent un ensemble de règles de contenu partagées par une grande variété d'éléments ;
+Les catégories de contenu relatives aux formulaires qui décrivent les règles de contenu partagées par les éléments en lien avec les formulaires ;
+Les catégories de contenu spécifiques qui décrivent des catégories plus rares et qui s'appliquent à peu d'éléments, parfois dans un contexte particulier</th>
+<th class="meta">Contenu méta-données</th>
+<th>Les éléments appartenant à cette catégorie modifient la présentation ou le comportement du reste du document, insèrent des liens vers d'autres documents ou comportent des informations sur la structure même des données.</th>
+
+<h3 class="flux">Contenu de flux </h3>
+<p>Les éléments appartenant à la catégorie de contenu de flux contiennent généralement du texte ou du contenu intégré.Ces éléments sont : 
+   <li> <code>&lt;a&gt;</code> :l'élément d'ancre (pour ancre ou anchor en anglais ), avec son att son attribut href,crée un lien hypertexte vers des pages web,des fichiers ,des addresses e-mail,des emplacementsse trouvant dans la meme page , ou tout ce qu'une URL peut adresser.
+Le contenude chaque élément cette balise doit indiquer la destination du lien.Si l'attribut href est présent,appuyer sur la touche entrée en se concentrant sur l'élément la balise "a" l'activera. </tr>
+    <li> <code>&lt;abbr&gt;</code>  : C'est l'élément d'abréviation cette balise sert à représenter une abréviation ou un acronyme;il a pour attribut facultatif  "title" qui peut fournir une explication ou une description de l'abréviation.S'il est présent ,"title"  doit contenir cette description complète et rien d'autre .</li>
+    <li>  <code>&lt;address&gt;</code> :L'élément HTML <code>&lt;address&gt;</code> indique des informations de conctact pour une personne , un groupe de personnes ou une organisation .</li>
+    <li> <code>&lt;article&gt;</code>:  Cet élément représente une composition autonome dans un document,une page,une application ou un site , destinée à etre distribuée ou réutilisée de manière indépendante (par exemple dans le cadre d'une syndication ).Exemples: un message de forum,un articlede de magazineou de journal,ou un journal un article de blog , une fiche de produit,un commentaire soumis par un utilisateur,un widget ou gadget interactif, ou tout autre élément de ontenu indépendant. </li>
+    <li> <code>&lt;aside&gt;</code>: L'élément HTML  <code>&lt;aside&gt;</code> représente une section d'un document dont le contenu est indirectement lié au contenu environnant et qui peut être considéré comme séparé du contenu principal. Il s'agit généralement d'une note de bas de page, d'une citation, d'un glossaire, d'une digression ou d'une liste de liens connexes.</li>
+    <li> <code>&lt;audio&gt;</code>a: L'élément HTML  <code>&lt;audio&gt;</code> est utilisé pour intégrer du contenu audio dans un document HTML. Il permet de lire des fichiers audio tels que des chansons, des podcasts ou des enregistrements vocaux directement dans le navigateur.</li>    
+    <li> <code>&lt;b&gt;</code> :Il permet d'attirer l'attention du lecteur sur un contenu qui n'a pas beaucoup d'importance significative .Anciennemant utilisé pour mettre le texte en gras.
+    NB: Cet élément ne doit pas etre utilisé pour mettre en forme des éléments,c'est la propriété CSS "font-weight"qu'il faut utiliser.Si l'élément est d'une importance particulière,on utilisera l'élément HTML "<code>&lt;strong&gt;</code>"</li>
+    <li> <code>&lt;bdo&gt;</code>  : L'élélment HML "<code>&lt;bdo&gt;</code>" est utilisé afin de d'outrepasser la direction du texte .Cela permet d'imposer une direction donnée à un texte ; c'est-à-dire que l'orientation du texte est mais pas celle des caractéres .</li>
+    <li>  <code>&lt;bdi&gt;</code> : Cet élément est utlisé pour isole une protée (span) de texte pouvant etre formatée dans une direction différente de celle du texte qui l'entoure.Cela permet ,par exemple,de présenter correctement une citation en arabe (qui sont écrits de droite à gauche ) au sein d'un texte écrit en français (écrit de gauche à droite) .</li>
+    <li>  <code>&lt;blockquote&gt;</code> :L'élélment <blockquote>(qui signifie bloc de citation en français)indique que le texte contenu dans l'élélmentest une citation longue.Le texte est généralement affiché avec une indentation  </li>    
+    <li>  <code> &lt;br&gt;</code> : L'élément de saut de ligne "br" créé un saut de ligne dans le texte .Il s'avère utile lorsque les sauts de ligne ont une importance par exemple quand vous mettez un poème dans votre document HTML .</li>
+    <li>  <code>&lt;button&gt;</code> : Est un élélment HTML représentant un bouton ;c'est un élément interactif qui peut etre activé avec une souris ,un clavier,u doigt,une commande vocale ou toute autre technologie d'assistance.Il permet des actions tel qu'envoyer des formulaires ou ouvrir une boite de dialogue . Il faut savoir que par défaut ,les boutons HTML sont présentés dans unn style ressemblant à la plate-forme  d'exécution de l'agent utilisateur , mais vous pouvez modifier son apparence avec du CSS </li>
+    <li> <code>&lt;canvas&gt;</code> : L'élément de canevas graphique , cet élélment est utilisé avec l'API canvas, ou l'API WebGL pour dessiner des graphiques et des animations .</li>
+    <li>  <code>&lt;cite&gt;</code> : L'élélment "cite" est celui de citation dans l'HTML , il contient le titre d'une oeuvre telle qu'un livre,une chason,un filmune sculpture ...Cet élélment doit contenir le titre de l'oeuvre;la référence peut-etre abrégée en accord avec les conventions d'usages pour l'ajout des métadonnées de citations .</li>
+    <li>  <code>&lt;code&gt;</code>  : Cet élélmentest celui de en ligne ,il  représente un court fragment de code machine .Par défaut ,l'agent utilisateur utilise une police à chase fixe (monospace) afin d'afficher le text contenu dans cet élément .</li>
+    <li> <code>&lt;data&gt; </code> : Cet élélment relie un contenu à une version de ce contenu interprétable par ordinateur .Si le contenu possède une composante temporelle,l'élélment <code> <time></code> doit etre utilisé.  </li>
+    <li> <code>&lt;datalist&gt;</code> : <p>Pour élélment de listedes données en français , il contient un ensemble d'éléments <code> <option> </code>  qui représentent les valeurs possibles pour d'autres controles</p></li>
+    <li> <code>&lt;del&gt;</code>  :Cet élément est celui de texte supprimé , il représente une portion de texte ayant été suprimée d'un document HTML.Cet élément est souvent affiché rayé.Il a pour élément contraire ins qui est utilisé pour représenter des portions de texte ajoutées .</li>
+    <li> <code>&lt;details&gt;</code> : L'élément HTML details est utilisé comme un outil permettant de révéler une information.Cette information peut-etre un résumé ou un intitulé fournis grace à un élélment summary . Il faut savoir que la plupart du temps ,le controle utilisé pour cet élément est un triangle qui est tourné ou tordu afin d'indiquer si l'élélment est révélé ou non ;si le premier élément  fils de l'élélment "details"est un élément summary ,c'est le contenu intitulé  pour le contenu à révéler c'est-à-dire l'intitulé est donc toujours visible.   </li>
+    <li> <code>&lt;dfn&gt;</code> : L'élément HTML <code>&lt;dfn&gt;</code> est utilisé pour définir un terme ou une expression dans un document. Il est souvent utilisé pour introduire un nouveau terme ou pour fournir une définition d'un terme déjà connu.</li>
+    <li><code>&lt;div&gt;</code> : L'élélment HTML <code>&lt;div&gt;</code> est un conteneur générique du contenu flux .Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide du  <a href="CSS.html">CSS</a> </li> 
+    <li><code>&lt;dl&gt;</code> : L'élélment  HTML <code>&lt;dl&gt;</code> représente une liste de descriptions sous la forme d'une liste de paires associant des termes qui sont fournis par des éléments <code>&lt;dt&gt;</code> et leurs descriptions ou définitions fournies par des éléments <code>&lt;dd&gt;</code>.On utilisera par exemple cet élément pour implémenter un glossaire . </li>
+    <li><code>&lt;em&gt;</code>:L'élélment HTML <code>&lt;em&gt;</code> (pour emphase) est utilisé afin de marquer un texte sur lequel on veut insister.Les éléments <code>&lt;em&gt;</code> peuvent être imbriqués,chaque degré d'imbrication indiquant un degré d'insistance plus élevé.</li>
+    <li><code>&lt;embed&gt;</code>: L'élélment HTML <code>&lt;embed&gt;</code> permet d'intégrer du contenu externe à cet endroit dans le document.Le contenu peut être fourni par une application externe ou une autre source telle qu'un plugin du navigateur.</li>
+    <li><code>&lt;fieldset&gt;</code>:L'élélment pour les ensembles de champs ,il est utilsé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (<code>&lt;label&gt;</code>) dans un formulaire HTML.</li>
+    <li><code>&lt;figure&gt;</code>:L'élélment de figure avec légende facultative , cet élélment HTML représente un contenu autonome , éventuellement accompagné d'une légende facultative,qui est spécifiée à l'aide de l'élément <code>&lt;figcaption&gt;</code>.La figure,sa légende et son contenu sont référencés comme une seule unité.</li>
+    <li><code>&lt;footer&gt;</code>:L'élélment HTML <code>&lt;footer&gt;</code> représentele pied de page de la section ou de la racine de sectionnement la plus proche .Un élément <code>&lt;footer&gt;</code> contient habituellement des informations sur l'autrice ou l'auteur de la section,les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation.</li>
+    <li><code>&lt;form&gt;</code>:L'élélment HTML <code>&lt;form&gt;</code> représente un formulaire interactif qui peut être utilisé pour soumettre des données à un serveur web. Il peut contenir divers éléments de formulaire tels que des champs de saisie, des boutons radio, des cases à cocher, etc.</li>
+    <li><code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code>: Les éléments de titre HTML sont utilisés pour définir les titres et sous-titres d'un document. Ils vont de <code>&lt;h1&gt;</code> (le plus important) à <code>&lt;h6&gt;</code> (le moins important).</li>
+    <li><code>&lt;header&gt;</code>:L'élélment HTML <code>&lt;header&gt;</code> représente du contenu introductif,généralement un groupe de contenu introductifou de contenu aidant à la navigation.IL peut contenir des éléments tels qu'un logo ,un formuliare de recherche,le nom d'auter,etc...</li>
+    <li><code>&lt;hgroup&gt;</code>:L'élélment HTML <code>&lt;hgroup&gt;</code> représente un titre et son contenu associé.Il regroupe un élément <code>&lt;h1-h6&gt;</code> avec un ou plusieurs paragraphes <code>&lt;p&gt;</code>.</li>
+    <li><code>&lt;hr&gt;</code>:L'élélment HTML <code>&lt;hr&gt;</code> représente une séparation thématique entre les paragraphes ou les sections d'un document. Il est souvent utilisé pour créer une ligne horizontale.</li>
+    <li><code>&lt;i&gt;</code>:L'élément HTML <code>&lt;i&gt;</code> représente un morceau de texte qui se différencie du texte principal.Cela peut par exemple être le cas pour des termes techniques,des phrases dans une langue étrangère ou encore l'expression des pensées d'un personnage.Le contenu de cet élélment est généralement affiché en italique .</li>
+    <li><code>&lt;iframe&gt;</code>:L'élélment HTML <code>&lt;iframe&gt;</code> permet d'intégrer un document HTML dans un autre document HTML. Il est souvent utilisé pour afficher des contenus externes tels que des vidéos, des cartes ou des formulaires.</li>
+    <li><code>&lt;img&gt;</code>:L'élélment HTML <code>&lt;img&gt;</code> est utilisé pour intégrer des images dans un document HTML. Il nécessite l'attribut <code>src</code> pour spécifier l'URL de l'image et peut également inclure des attributs tels que <code>alt</code> pour fournir une description alternative de l'image.</li>
+    <li><code>&lt;input&gt;</code>:L'élélment HTML <code>&lt;input&gt;</code> est utilsé pour créer un controle interactif dans un formulaire web qui permet aux utilisateurs de saisir des données .Les saisies possibles et le comportement de l'élélment <code>&lt;input&gt;</code>dépendent fortement de la valeur indiquée dans son attribut <code>type=&quot; &quot;</code> et ses autres attributs .Il existe différents contrôles pour la saisie,qui dépendent de l'appareil utilisé et de l'agent utilisateur. 
+    <h4>Les différents types de champs <code>&lt;input&gt;</code></h4>
+    <p>La façon dont un élélment <code>&lt;input&gt;</code>fonctionne dépend grandement de la valeur de son attribut "type".Aussi ,pour chacun de ces types, on aura une page de référence dédiée.Par défaut,lorsque l'attribut  "type" n'est pas présent , il aura la valeur implicite "text".</p>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>text</code></td>
+            <td>Champ de saisie de texte simple.</td>
+        </tr>
+        <tr>
+            <td><code>password</code></td>
+            <td>Champ de saisie de mot de passe, qui est masqué.</td>
+        </tr>
+        <tr>
+            <td><code>email</code></td>
+            <td>Champ pour saisir une adresse e-mail.</td>
+        </tr>
+        <tr>
+            <td><code>number</code></td>
+            <td>Champ pour saisir un nombre.</td>
+        </tr>
+        <tr>
+            <td><code>date</code></td>
+            <td>Champ pour saisir une date.</td>
+        </tr>
+        <tr>
+            <td><code>checkbox</code></td>
+            <td>Case à cocher.</td>
+        </tr>
+        <tr>
+            <td><code>color</code></td>
+            <td>Champ pour sélectionner une couleur.</td>
+        </tr>
+        <tr>
+            <td><code>date</code></td>
+            <td>Un contrôle qui permet de saisir une date,qui est composé d'un jour,d'un mois et d'une année mais sans heure.</td>
+        </tr>
+        <tr>
+            <td><code>datetime-local</code></td>
+            <td>Un contrôle qui permet de saisir une date et une heure(sans fuseau horaire),cela ouvre un sélecteur de date ou des roues numériques pour la sélection  de la date et de l'heure dans les navigateurs qui le prennent en charge .</td>
+        </tr>
+        <tr>
+            <td><code>file</code></td>
+            <td>Un attribut qui permet de sélectionner un fichier.</td>
+        </tr>
+        <tr>
+            <td><code>hidden</code></td>
+            <td>Un attribut qui n'affiche pas mais sa valeur est envoyée au serveur .Il  y a un exemple dans la colonne à côté,mais il est caché . </td>
+        </tr>
+        <tr>
+            <td><code>image</code></td>
+            <td>Un bouton graphique d'envoi du formulaire.L'attribut "src" doit être défini avec la source de l'image et l'attribut  "alt" doit  être défini avec le texte alternatif si l'image est absente . </td>
+        </tr>
+        <tr>
+            td><code>month</code></td>
+            <td>Un contrôle qui permet de saisir un mois et une année,mais sans jour ni heure.</td>
+        </tr>
+        <tr>
+            <td><code>number</code></td>
+            <td>Un attribut qui permet de saisir un nombre ,affichant des curseurs pour augmenter ou réduire la valeur et disposant d'une validation par défaut lorsqu"elle est prise en charge .Un clavier numérique est affiché pour certains appareils avec des claviers dynamiques .</td>
+        </tr>
+        <tr>
+            <td><code>radio</code></td>
+            <td>Bouton radio pour sélectionner une option parmi plusieurs.</td>
+        </tr>
+        <tr>
+            <td><code>range</code></td>
+            <td>Un attribut qui permet de saisir un nombre dont la valeur exacte n'est pas importante .Le contrôle qui s'affiche est une jauge horizontale avec la valeur par défaut placée au milieu; on l'utilise avec les attributs "min" et "max" pour définir un intervalle des valeurs acceptables.</td>
+        </tr>
+        <tr>
+            <td><code>reset</code></td>
+            <td>Bouton pour réinitialiser le formulaire.</td>
+        </tr>
+        <tr>
+            <td><code>search</code></td>
+            <td>Un champ texte sur une ligne pour de termes de recherche.Les sauts de ligne sont automatique retirés .Le contrôle peut diposer d'une icône permettant de réinitialiser le champ .</td>
+        </tr> 
+        <tr>
+            <td><code>submit</code></td>
+            <td>Un attribut qui permet d'envoyer le formulaire .</td>
+        </tr>       
+        <tr>
+            <td><code>tel</code></td>
+            <td>Un attribut pour saisir un numéro de téléphone , qui affiche un clavier téléphonique pour certains appareils avec des claviers dynamiques.</td>
+        </tr>
+        <tr>
+            <td><code>time</code></td>
+            <td>Un contrôle qui permet de saisir une heure,qui est composé d'une heure et d'une minute mais sans date.</td>
+        </tr>
+        <tr>
+            <td><code>url</code></td>
+            <td>Un champ pour saisir une URL.Cet attribut ressemble à un champ de type "text", mais dispose de paramètres de validation et d'un clavier adapté pour les navigateurs et appareils qui les prennent en charge et qui ont un clavier dynamique.  </td>
+        </tr>
+        <tr>
+            <td><code>week</code></td>
+            <td>Un attribut permettant de saisir une date représentée par un numéro de semaine et une année (sans indication de fuseau horaire ). </td>
+        </tr>
+    </table>
+
+
+    </li>  
+    <li>
+        <code>&lt;kbd&gt;</code> : L'élément HTML <code>&lt;kbd&gt;</code> est utilisé pour représenter une entrée au clavier. Il est souvent utilisé pour indiquer des raccourcis clavier ou des commandes que l'utilisateur doit saisir.</li>
+    </li> 
+    <li><code>&lt;label&gt;</code> :L'élément HTML <code>&lt;label&gt; représente une légende pour un objet d'une interface utilisateur .Il peut être associé à un contrôle en utilisant l'attribut "for" ou en plaçant l'élélment du contrôle à l'inntérieur de l'élément <code>&lt;label&gt;</code>.Un tel contrôle est appelé contrôle étiqueté par élément <code>&lt;label&gt; </code> .</li>
+    <li><code>&lt;mark&gt;</code> : L'élément HTML <code>&lt;mark&gt;</code>représente un texte marqué ou surligné à cause de sa pertinence dans le contexte .Il peut par exemple  être utlisisé afin d'indiquer des correspondances d'un mot-clé recherché au sein d'un document.</li>
+    <li><code>&lt;math&gt;</code> :L'élément racine de MathML est <code>&lt;math&gt;</code>.Tout objet représenté en MathML doit être encadré de balises <code>&lt;math&gt;</code>.De plus , il est interdit d'imbriquer un autre élément <code>&lt;math&gt;</code> à l'intérieur d'un premier .Il est toutefois possible d'avoir un nombre arbitraire d'éléments fils à l'intérieur d'un élément <code>&lt;math&gt;</code>.</li>
+    <li><code>&lt;menu&gt;</code>:L'élément HTML <code>&lt;menu&gt;</code> est une alternative sémantique à <code>&lt;ul&gt;</code> traité par les navigateurs, et en termes d'accessibilité comme un élément <code>&lt;ul&gt;</code>. Il représente une liste d'éléments non-ordonnée (chaque élément de la liste étant représenté par un élément code
+        li).</li>
+    <li><code>&lt;meter&gt;</code>:L'élément HTML <code>&lt;meter&gt;</code> eprésente une valeur scalaire dans un intervalle donné ou une valeur fractionnaire. <p>Cet élément HTML contient ses propres attributs qui sont les suivants :</p>
+    <table>
+        <tr>
+            <th>Attribut</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>form</code></td>
+            <td>Cet attribut contient l'attribut 'id' de l'élément <code>&lt;form&gt;</code> auquel celui-ci est rattaché. Par défaut, il est à l'élément <code>&lt;form&gt;</code> qui est son plus proche ancêtre.</td>
+        </tr>
+        <tr>
+            <td><code>min</code></td>
+            <td>Valeur minimale de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>max</code></td>
+            <td>Valeur maximale de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>value</code></td>
+            <td>Valeur actuelle de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>low</code></td>
+            <td>Valeur basse de l'intervalle.</td>
+        </tr>
+        <tr>
+            <td><code>high</code></td>
+            <td>Valeur haute de l'intervalle.</td>
+        </tr>
+        <tr>
+            <td><code>optimum</code></td>
+            <td>Cet attribut représente la valeur idéale pour la mesure. Si cet attribut est défini, il doit s'agir d'un nombre à virgule compris entre les valeurs des attributs 'min' et 'max'. Si la valeur de optimum est inférieure à 'low', s'il est défini, cela signifie que les valeurs les plus petites sont meilleures; si sa valeur est supérieure à 'high', s'il est défini, cela signifie que les valeurs les plus grandes sont meilleures; enfin, s'il est compris entre 'low' et 'high', cela signifie que les extrêmes ne sont pas les meilleures grandeurs.</td>
+        </tr>
+    </table>
+    </li>  
+    <li><code>&lt;nav&gt;</code>:L'élément HTML <code>&lt;nav&gt;</code> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.). Il est à savoir que cet élément ne contient que les attributs universels.</li>  
+    <li><code>&lt;noscript&gt;</code>:L'élément HTML <code>&lt;noscript&gt;</code>  définit un fragment HTML qui doit être affiché si les fonctionnalités de script ne sont pas prises en charge ou si elles sont désactivées.Sur cet élément on ne peut que utiliser les attributs universels </li>
+    <li><code>&lt;object&gt;</code>:L'élément HTML <code>&lt;object&gt;</code>  représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.Comme tout autre éléments HTML, cet élément inclut les attributs , mais voici quelques uns qui se retrouve le plsu souvent dans cet élément :
+    <table>
+        <tr>
+            <th>Attribut</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>Spécifie l'URL de la ressource externe à intégrer.L'adresse de la ressource, une URL valide. Au moins un attribut data et un attribut type doivent être définis; pour son bon fonctionnement </td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>L'élément de formulaire éventuel auquel l'élément est associé. La valeur de cet attribut doit être l'identifiant d'un élément 'form' du même document.</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>La hauteur de la ressource à afficher, exprimée en pixels CSS</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Le nom du contexte de navigation valide (HTML5) ou du contrôle associé à l'élément (HTML 4).</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>Le type MIME de la ressource définie par data. Au moins un attribut data et un attribut type doivent être définis.</td>
+        </tr>
+        <tr>usemap</tr>
+            <td>Spécifie l'URL d'une carte d'image à utiliser pour l'élément. La valeur de cet attribut doit commencer par un caractère dièse (#) suivi de l'identifiant d'un élément 'map' du même document.</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>La largeur de la ressource à afficher, exprimée en pixels CSS.</td>
+    </table>
+    </li>
+    <li><code>&lt;ol&gt;</code>:L'élément HTML <code>&lt;ol&gt;</code> représente une liste ordonnée, c'est-à-dire une liste dont les éléments sont numérotés ou classés dans un ordre spécifique. Chaque élément de la liste est représenté par un élément <code>&lt;li&gt;</code>.À l'instar des autres éléments HTML, il est possible d'utiliser les attributs universels sur cet élément.
+    <table>
+        <tr>
+        <th>Attribut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>reversed</td>
+        <td>Cet attribut booléen indique que les éléments de la liste sont dans l'ordre inverse. Les éléments sont numérotés de haut en bas.</td>
+    </tr>
+    <tr>
+        <td>start</td>
+        <td>Un nombre entier à partir duquel on commence à compter pour les éléments de la liste. Toujours un chiffre arabique (1, 2, 3, etc.), même lorsque le type de numérotation est constitué de lettres ou de chiffres romains. Par exemple, pour commencer à numéroter les éléments à partir de la lettre "d" ou du chiffre romain "iv", utilisez start="4".</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Définit le type de numérotation :
+
+a: pour les lettres minuscules
+A :pour les lettres majuscules
+i :pour les chiffres romains minuscules
+I :pour les chiffres romains majuscules
+1 :pour les chiffres (par défaut)
+Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut différent type est utilisé sur un élément &lt;li&gt; fermé.</td>
+    </tr>
+    </table>
+    </li>
+    <li><code>&lt;output&gt;</code>:L'élément HTML  <code>&lt;output&gt;</code>   représente un conteneur dans lequel un site ou une application peut injecter le résultat d'un calcul ou d'une action utilisateur.
+    Comme tous les autres éléments HTML, cet élément inclut les attributs universels.
+    <table>
+        <tr>
+            <th>Attributs</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>Une liste d'identifiants d'autres éléments, séparés par des espaces, qui ont joué un rôle dans le calcul (en tant que valeurs d'entrée ou autrement).</td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>L'élément de formulaire auquel l'élément est associé. La valeur de cet attribut doit être l'identifiant d'un élément 'form' du même document.</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Le nom de l'élément, qui peut être utilisé pour référencer l'élément dans des scripts ou des formulaires.</td>
+        </tr>    
+    </table>
+</li>
+<li><code>&lt;p&gt;</code>:L'élément HTML <code>&lt;p&gt;</code> représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical, leur première ligne est également parfois indentée. Les paragraphes sont des éléments blocs.</li>
+<li><code>&lt;picture&gt;</code>:L'élément HTML <code>&lt;picture&gt;</code> est un conteneur utilisé afin de définir zéro ou plusieurs éléments <code>&lt;source&gt;</code> destinés à un élément <code>&lt;img&gt;</code>. Le navigateur choisira la source la plus pertinente selon la disposition de la page (les contraintes qui s'appliquent à la boîte dans laquelle l'image devra être affichée), selon l'appareil utilisé (la densité de pixels de l'affichage par exemple avec les appareils hiDPI) et selon les formats pris en charge (ex. WebP pour les navigateurs Chromium ou PNG pour les autres). Si aucune correspondance n'est trouvée parmi les éléments <code>&lt;source&gt;</code>, c'est le fichier défini par l'attribut src de l'élément <code>&lt;img&gt;</code> qui sera utilisé.</li>
+<li><code>&lt;pre&gt;</code>:L'élément HTML <code>&lt;pre&gt;</code>  représente du texte préformaté, généralement écrit avec une police à chasse fixe. Le texte est affiché tel quel, les espaces utilisés dans le document HTML seront retranscrits.</li>
+<li><code>&lt;progress&gt;</code>:L'élément HTML <code>&lt;progress&gt;</code> indique l'état de complétion d'une tâche et est généralement représenté par une barre de progression.Comme tous les autres éléments HTML, cet élément inclut les attributs universels.
+<table>
+    <tr>
+        <th>Attributs</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>max</td>
+        <td>Cet attribut indique la valeur correspondant à la complétion de la tâche. Si l'attribut 'max' est présent, sa valeur doit être un nombre décimal supérieur à 0. La valeur par défaut est 1.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>Cet attribut indique l'état actuel de complétion de la tâche avec une valeur numérique. La valeur de l'attribut doit être un nombre décimal compris entre 0 et 'max' (ou entre 0 et 1 si l'attribut 'max' est absent). Si l'attribut 'value' est absent, la barre de progression traduit un état indéterminé (la tâche est en cours et on ne sait pas la durée qu'elle prendra).</td>
+    </tr>
+</table>
+</li>
+<li><code>&lt;q&gt;</code>:L'élément HTML <code>&lt;q&gt;</code> indique que le texte qu'il contient est une citation en incise. La plupart des navigateurs modernes entoure le texte de cet élément avec des marques de citation. Cet élément est destiné aux citations courtes qui ne nécessitent pas de sauts de paragraphe. Pour les plus grandes citations, on utilisera l'élément <code>&lt;blockquote&gt;</code>.Comme tous les autres éléments HTML, cet élément inclut les attributs universels.Mais reçoit le plus.
+<table>
+    <tr>
+        <th>Attribut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>cite</td>
+        <td>La valeur de cet attribut est une URL désignant la source du message ou de l'information citée. Cet attribut est prévu pour fournir des renseignements concernant le contexte ou la référence de cette citation.</td>
+    </tr>
+</table>
+</li>
+<li><code>&lt;ruby&gt;</code>:L'élément HTML <code>&lt;ruby&gt;</code> représente une annotation ruby. Les annotations 'Ruby' servent à afficher la prononciation des caractères d'Asie orientale.</li>
+<li><code>&lt;s&gt;</code>:L'élément HTML <code>&lt;s&gt;</code> permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. <code>&lt;s&gt;</code> ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors <code>&lt;del&gt;</code> et <code>&lt;ins&gt;</code>).</li>
+<li><code>&lt;samp&gt;</code>:L'élément HTML <code>&lt;samp&gt;</code> est un élément qui permet de représenter un résultat produit par un programme informatique en incise dans du texte. Il est généralement affiché avec la police à chasse fixe du navigateur (par exemple en Courier ou en Lucida Console).</li>
+<li><code>&lt;script&gt;</code>:L'élément HTML <code>&lt;script&gt;</code> est utilisé pour intégrer ou faire référence à un script exécutable. Cela fait généralement référence à du code JavaScript mais ce peut également être un autre type de script.Les scripts sans attribut 'async' ou 'defer' sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.
+<table>
+    <tr>
+        <th>Attributs</th>
+        <th>Descriptions</th>
+    </tr>
+    <tr>
+        <td>async</td>
+        <td>Cet attribut booléen indique si le navigateur doit, dans la mesure du possible, exécuter les scripts de manière asynchrone. Cet attribut ne doit pas être utilisé si l'attribut src est absent (c'est-à-dire pour les scripts « inline » déclarés dans les éléments), dans ce cas il n'aurait aucun effet.Par défaut les navigateurs prennent (async="false") lors de l'analyse du document HTML .</td>
+    </tr>
+    <tr>
+        <td>crossorigin</td>
+        <td>Les balises de script classiques enverront un minimum d'informations à window.onerror pour les scripts qui ne respectent pas les contrôles standard du CORS. Afin de disposer de plus de renseignements sur les erreurs pour les sites utilisant des domaines séparés pour des documents statiques, on pourra utiliser cet attribut.</td>
+    </tr>
+    <tr>
+        <td>defer</td>
+        <td>Cet attribut booléen permet d'indiquer au navigateur que le script doit être exécuté après l'analyse du document.Il faut aussi savoir que cet attribut ne doit pas être sans l'attribut "src" ,dans ce cas il n'aurait aucun effet </td>
+    </tr>
+    <tr>
+        <td>integrity</td>
+        <td>Cet attribut contient des métadonnées que l'agent utilisateur peut vérifier afin de contrôler qu'une ressource téléchargée n'a pas été modifiée de façon frauduleuse.</td>
+    </tr>
+    <tr>
+        <td>nomodule</td>
+        <td>Cet attribut booléen indique que le script ne doit pas être exécuté dans le navigateur si celui prend en charge les modules ES6</td>
+    </tr>
+    <tr>
+        <td>nonce</td>
+        <td>Un nonce cryptographique utilisé pour inscrire les scripts en ligne sur une liste blanche pour la règle script-src de la CSP (Content Security Policy)</td>
+    </tr>
+    <tr>
+        <td>referrerpolicy</td>
+        <td>Une chaîne de caractères qui indique le référent (referrer) à utiliser lors de la récupération du script.Mais il existe plusieurs referrer qui sont :
+        <ul>
+            <li><code>no-referrer</code>: Aucun référent n'est envoyé.</li>
+            <li><code>no-referrer-when-downgrade</code>: Le référent est envoyé pour les requêtes HTTPS vers des ressources HTTP, mais pas l'inverse.</li>
+            <li><code>origin</code>: Seul l'origine du document est envoyée comme référent.</li>
+            <li><code>origin-when-cross-origin</code>: L'origine est envoyée pour les requêtes cross-origin, mais le référent complet est envoyé pour les requêtes intra-origine.</li>
+            <li><code>same-origin</code>: Le référent complet est envoyé uniquement pour les requêtes intra-origine.</li>
+            <li><code>strict-origin</code>: Seule l'origine est envoyée comme référent, même pour les requêtes intra-origine.</li>
+            <li><code>strict-origin-when-cross-origin</code>: L'origine est envoyée pour les requêtes cross-origin, mais le référent complet est envoyé pour les requêtes intra-origine.</li>
+            <li><code>unsafe-url</code>: Le référent complet est toujours envoyé, quelle que soit la sécurité de la connexion.</li>
+        </td>
+    </tr>
+    <tr>
+        <td>src</td>
+        <td>Cet attribut définit l'URL d'un script externe ;il peut être utilisé pour insérer des scripts autrement que de l'insérer dans le même document.IL faut aussi savoir que les éléments scripts  avec cette attribut ne doivent pas contenir du script dans leurs balises  cela crée des comportements bizzare du fichier à chargé .</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Cet attribut indique les types de "script",il possede différente valeur appartenant à ces catégories:
+        <ul>
+            <li><code>text/javascript</code>: Le type de script le plus courant, utilisé pour JavaScript.</li>
+            <li><code>module</code>: Indique que le script est un module JavaScript ES6.</li>
+            <li><code>application/json</code>: Utilisé pour les scripts JSON.</li>
+            <li><code>application/ld+json</code>: Utilisé pour les données structurées en JSON-LD.</li>
+            <li><code>text/ecmascript</code>: Un autre type pour JavaScript, moins courant.</li>
+        </td>
+    </tr>
+</table>
+</li>
+<li><code>&lt;section&gt;</code>:L'élément HTML  <code>&lt;section&gt;</code>  représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</li>
+<li><code>&lt;select&gt;</code>:L'élément HTML <code>&lt;select&gt;</code> représente un contrôle qui fournit une liste d'options parmi lesquelles l'utilisateur pourra choisir.Comme tous les autres éléments HTML, celui-ci inclut les attributs universels.Il possede aussi des attributs spécifiques :
+    <table>
+        <tr>
+            <th>Attributs</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>Cet attribut génere une chaîne de caractères fournissant une indication à l'agent utilisateur pour une fonctionnalités d'autocomplétion.</td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>Cet attribut booléen indique que le contrôle doit recevoir le focus automatiquement lorsque la page est chargée.</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>Cet attribut booléen indique que le contrôle est désactivé et ne peut pas être utilisé.</td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>Cet attribut contient l'attribut 'id' de l'élément <code>&lt;form&gt;</code> auquel celui-ci est rattaché. Par défaut, il est à l'élément <code>&lt;form&gt;</code> qui est son plus proche ancêtre.</td>
+        </tr> 
+        <tr>
+            <td>multiple</td>
+            <td>Cet attribut booléen indique que l'utilisateur peut sélectionner plusieurs options dans la liste.</td>
+        </tr>   
+        <tr>
+            <td>name</td>
+            <td>Le nom du contrôle, qui peut être utilisé pour référencer le contrôle dans des scripts ou des formulaires.</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>Cet attribut booléen indique que le contrôle doit être rempli avant que le formulaire puisse être soumis.</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td>Un entier indiquant le nombre d'options visibles dans la liste déroulante. Si cet attribut est absent, la liste déroulante n'affiche qu'une seule option à la fois.</td>
+        </tr>
+    </table>
+</li>
+<li><code>&lt;small&gt;</code>:L'élément HTML <code>&lt;small&gt;</code> permet de représenter des commentaires ou des textes à écrire en petits caractères .Il reçoit les attributs universels</li>
+<li><code>&lt;span&gt;</code>:L'élément HTML <code>&lt;span&gt;</code> est conteneur générique en ligne pour les contenus phrasés .Il peut être utilisé pour grouper des éléments afin de les mettre en forme (grâce aux attributs "class" ou "id" et aux règles CSS) ou parce qu'ils partagent certaines valeurs d'attribut comme "lang".Il doit être utilisé que quand  aucun autre élément sémantique  n'est approprié. L'élément <code>&lt;span&gt;</code> est très proche de l'élément <code>&lt;div&gt;</code>,mais l'élément <code>&lt;div&gt;</code> est un élément de bloc, alors que <code>&lt;span&gt;</code> est un élément en ligne.Il reçoit les attributs universels.</li>
+<li><code>&lt;strong&gt;</code>:L'élément HTML <code>&lt;strong&gt;</code>indique que le texte a une importance particulière ou un certain sérieux voire un caractère urgent. Cela se traduit généralement par un affichage en gras.Il reçoit aussi les attributs universels </li>
+<li><code>&lt;sub&gt;</code>:L'élément HTML <code>&lt;sub&gt;</code> est utilisé, pour des raisons typographiques, afin d'afficher du texte en indice (sous la ligne de base et généralement plus petit) par rapport au bloc de texte environnant.Comme les autres éléments HTML il reçoit les attibuts universels .</li>
+<li><code>&lt;sup&gt;</code>: L'élément HTML <code>&lt;sup&gt;</code> permet d'afficher du texte en exposant .il reçoit aussi les attributs universels .</li>
+<li><code>&lt;svg&gt;</code>:L'élélment HTML  <code>&lt;svg&gt;</code> est utilisé pour intégrer des documents SVG ;par exemple des documents HTML. </li>
+<li><code>&lt;table&gt;</code>:L'élélment HTML <code>&lt;table&gt;</code> permet de représenter des tableaux de données dans une page web ;c'est-à-dire des éléments dans un tableau en   deux dimensions </li>
+<li><code>&lt;template&gt;</code>:L'élément <code>&lt;template&gt;</code> est un élément plus mécanique utilisé pour stocker du contenu HTML du côté client qui ne s'affiche quand la page se charge mais qui peut être instancié et affiché par la suite grâce à un script JavaScript.Il reçoit aussi les attributs universels .</li>
+<li><code>&lt;textarea&gt;</code>:L'élément <code>&lt;textarea&gt;</code> représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.L'élément <code>&lt;textarea&gt;</code> gère plusieurs attributs utilisés par les éléments  <code>&lt;input&gt;</code> : autocomplete, autofocus, disabled, placeholder, readonly et required.</li>
+<li><code>&lt;time&gt;</code>:L'élément <code>&lt;time&gt;</code> est utilisé pour entrer une période donnée ; et il permet aussi d'utiliser l'attribut "datetime" afin de traduire la date,il représente aussi les dates selon les fuseaux horaires .</li>
+<li><code>&lt;ul&gt;</code>:L'élément <code>&lt;ul&gt;</code> représente une liste d'éléments sans ordre particulier. Il est souvent représenté par une liste à puces.Il ne reçoit pas d'attributs universels.</li>
+<li><code>&lt;var&gt;</code>:L'élément <code>&lt;var&gt;</code>représente une variable dans une expression mathématique ou un texte lié à la programmation. Son contenu est généralement représenté avec une version italique de la police.Il acceptes les attributs universels . </li>
+<li><code>&lt;video&gt;</code>:L'élément <code>&lt;video&gt;</code> sert à intrégrer une vidéo à notre contenu HTML.Il reçoit l'attribut "autoplay" qui lance la vidéo dés qu'elle peut être joué sans être arrêtée de manière automatique; mais il accepte aussi les attributs universels .</li>
+<li><code>&lt;wbr&gt;</code>:L'élément <code>&lt;wbr&gt;</code> permet de représenter un emplacement où casser la ligne si nécessaire. Le navigateur pourra alors utiliser cet emplacement pour effectuer un saut de ligne si le texte est trop long et qu'en temps normal, une règle empêche le saut de ligne.Il accepte aussi les attributs universels .</li>
+</p>
+<h4>Contenu sectionnant</h4>
+    <p>Le contenu sectionnant est un ensemble d'éléments HTML qui permettent de structurer le contenu d'une page web en sections logiques. Ces éléments sont utilisés pour organiser le contenu de manière hiérarchique et sémantique, facilitant ainsi la compréhension et la navigation dans le document.</p>
+    <p>Voici les éléments de contenu sectionnant les plus courants :</p>
+    <ul>
+        <li><code>&lt;article&gt;</code>:L'élément <code>&lt;article&gt;</code> représente une composition d'article qui est indépendante dans un document destinée à être réutilisée de manière indépendante.Il reçoit les attributs universels commun à tout les éléments .</li>
+        <li><code>&lt;aside&gt;</code>:L'élément <code>&lt;aside&gt;</code> représente une partie d'un document dont le contenu n'a qu'un rapport indirect avec le contenu principal du document.Cet élément ne reçoit que les atttributs universels .</li>
+        <li><code>&lt;nav&gt;</code>:L'élément HTML <code>&lt;nav&gt;</code>  représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page.Il ne possède que les attributs universels </li>
+        <li><code>&lt;section&gt;</code>:L'élément HTML <code>&lt;section&gt;</code> représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.Il ne reçoit que les attributs universels.</li>
+    </ul>
+<h4>Contenu de titre </h4>
+    <p>Le contenu de titre est un ensemble d'éléments HTML qui permettent de structurer les titres et sous-titres d'un document. Ces éléments sont utilisés pour organiser le contenu de manière hiérarchique, facilitant ainsi la navigation et la compréhension du document.</p>
+    <p>Voici les éléments de contenu de titre les plus courants :</p>
+    <ul>
+        <li><code>&lt;hgroup&gt;</code>:L'élément HTML <code>&lt;hgroup&gt;</code> représente un titre et son contenu associé. Il regroupe un élément <code>&lt;h1&gt;</code>- <code>&lt;h6&gt;</code>  avec un ou plusieurs paragraphes <code>&lt;p&gt;</code>.</li>
+    </ul>
+
+<h3>Contenu phrasé</h3>
+    <p>Le contenu phrasé est un ensemble d'éléments HTML qui permettent de structurer le texte et les éléments en ligne d'un document. Ces éléments sont utilisés pour formater le texte, ajouter des liens, des images, des citations, etc.</p>
+    <p>Voici les éléments de contenu phrasé les plus courants :</p>
+    <ul>
+        <li><code>&lt;a&gt;</code>:L'élément HTML <code>&lt;a&gt;</code> représente un lien hypertexte, qui permet de naviguer vers une autre page ou une autre ressource.</li>
+        <li><code>&lt;abbr&gt;</code>:L'élément HTML <code>&lt;abbr&gt;</code> représente un acronyme ou une abréviation. Il peut inclure un attribut "title" pour fournir le développement complet de l'acronyme.</li>
+        <li><code>&lt;audio&gt;</code>:L'élément HTML <code>&lt;audio&gt;</code> est utilisé pour intégrer du contenu audio dans une page web.</li>
+        <li><code>&lt;b&gt;</code>:L'élément HTML <code>&lt;b&gt;</code> est utilisé pour mettre en évidence du texte sans indiquer d'importance particulière.</li>
+        <li><code>&lt;blockquote&gt;</code>:L'élément HTML <code>&lt;blockquote&gt;</code> représente une citation longue, généralement d'un autre auteur ou d'une source externe.</li>
+        <li><code>&lt;br&gt;</code>:L'élément HTML <code>&lt;br&gt;</code> est utilisé pour insérer un saut de ligne dans le texte.</li>
+        <li><code>&lt;canvas&gt;</code>:L'élément HTML <code>&lt;canvas&gt;</code> est utilisé pour dessiner des graphiques et des animations à l'aide de JavaScript.</li>
+        <li><code>&lt;cite&gt;</code>:L'élément HTML <code>&lt;cite&gt;</code> est utilisé pour citer le titre d'une œuvre, comme un livre, un film, une chanson, etc.</li>
+        <li><code>&lt;del&gt;</code>:L'élément HTML <code>&lt;del&gt;</code> est utilisé pour représenter du texte supprimé ou modifié dans un document.</li>
+        <li><code>&lt;dfn&gt;</code>:L'élément HTML <code>&lt;dfn&gt;</code> est utilisé pour définir un terme ou un concept dans le texte.</li>
+    </ul>
+
+<h3>Contenu intégré</h3>
+    <p>Le contenu intégré est un ensemble d'éléments HTML qui permettent d'intégrer des ressources externes dans une page web. Ces éléments sont utilisés pour afficher des images, des vidéos, des fichiers audio, des documents, etc.</p>
+    <p>Voici les éléments de contenu intégré les plus courants :</p>
+    <ul>
+        <li><code>&lt;audio&gt;</code>:L'élément HTML <code>&lt;audio&gt;</code> sert à intégrer un fichier audio externe dans le document , elle peut recevoir plusieurs types de contenus audio grâce "src", il reçoit le plus souvent aussi l'auttribut "autoplay";si cet attribut est spécifié ,l'audio commencera automatiquement la lecture de la source audio sans attendre le chargement total du fichier .Il inclut aussi les attributs universels.</li>
+        <li><code>&lt;canvas&gt;</code>:On utilise l'élément <code>&lt;canvas&gt;</code> pour dessiner des graphiques ou des animations .Comme tous les autres éléments il accepte les attributs universels ,mais il voici quelques attributs qui sont utilisés le plus souvent :
+        <table>
+            <tr>
+                <th>Attributs</th>
+                </th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>La hauteur du canevas, exprimée en pixels CSS. Si cet attribut est absent, la valeur par défaut est de 150 pixels.</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>La largeur du canevas, exprimée en pixels CSS. Si cet attribut est absent, la valeur par défaut est de 300 pixels.</td>
+            </tr>
+        </table>
+        </li>
+        <li><code>&lt;embed&gt;</code>:On utilise l'élément <code>&lt;embed&gt;</code> pour intégrer du contenu externe dans le document ,cela peut provenir d'une application externe comme un plugin du navigateur.Voici ci-dessous des attributs qui sont souvent utilisés avec cet élément:
+        <table>
+            <tr>
+                <th>Attributs</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>La hauteur de l'élément intégré, exprimée en pixels CSS.</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>L'URL de la ressource externe à intégrer. Il s'agit de l'adresse du contenu que l'on souhaite afficher dans l'élément.</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Le type MIME de la ressource intégrée. Il permet au navigateur de savoir comment traiter le contenu intégré.</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>La largeur de l'élément intégré, exprimée en pixels CSS.</td>
+            </tr>
+        </table>
+        Mais il faut aussi savoir que cet élélment reçoit les attributs universels .</li>
+        <li><code>&lt;iframe&gt;</code>:On utilise cet élélment pour représenter une navigation imbriqué qui permet d'obtenir un page html courante dans la page courante .Cet élément prends en charge les attributs univrsels .</li>
+        <li><code>&lt;img&gt;</code>:On utilise cet élément pour intégrer des images dans le document ;l'élémént <code>&lt;img&gt;</code> possède des atributs spécifique pour son utilisation qui sont :
+        <table>
+            <tr>
+                <th>Attributs</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Spécifie l'URL de l'image à afficher. Il s'agit de l'adresse de la ressource image.Sa présence est obligatoire.</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Fournit une description textuelle de l'image. Cette description est utilisée par les lecteurs d'écran pour les personnes malvoyantes et s'affiche si l'image ne peut pas être chargée.</td>
+            </tr>
+
+        </table>
+        Mais il faut aussi savoir que cet élélment reçoit les attributs universels .</li>
+        <li><code>&lt;object&gt;</code>:L'élément HTML <code>&lt;object&gt;</code> représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin. Il reçoit aussi les attributs universels . </li>
+        <li><code>&lt;video&gt;</code>:L'élément HTML <code>&lt;video&gt;</code> sert à intégrer une vidéo dans le document. Il reçoit l'attribut "autoplay" qui lance la vidéo dés qu'elle peut être joué sans être arrêtée de manière automatique; mais il accepte aussi les attributs universels .</li>
+    </ul>
+<h3>Contenu interactif</h3>
+    <p>Le contenu interactif est un ensemble d'éléments HTML qui permettent d'ajouter des fonctionnalités interactives à une page web. Ces éléments sont utilisés pour créer des formulaires, des contrôles de saisie, des boutons, des menus déroulants, etc.</p>
+    <p>Voici les éléments de contenu interactif les plus courants :</p>
+    <ul>
+        <li><code>&lt;a&gt;</code>:L'élément HTML <code>&lt;a&gt;</code>  avec son attribut son attribut "href" qui lui permet de créer un lien vers des pages web ;il reçoit comme tout autre élément les attributs universels.</li>
+        <li><code>&lt;button&gt;</code>:L'élément HTML <code>&lt;button&gt;</code> est un élément interactif qui peut être activé avec la souris,clavier,touche ou avec une commande vocale  à l'aide d'un assistant technologique ; il reçoit aussi les attributs universels .</li>
+        <li><code>&lt;details&gt;</code> :L'élément HTML <code>&lt;details&gt;</code> est utilisé comme un outils pour afficher des informations pour un élément du document ;il est souvent avec l'attribut "open" qui est un booléen qui sert à dire que si les éléments de l'élément <code>&lt;details&gt;</code> est visible ou pas;par defaut cet attribut n'est pas présent c'est qui veut dire que le contenu ne s'afiche pas .Mais il est à savoir qu'il reçoit aussi les attributs universels .</li>
+        <li><code>&lt;label&gt;</code>:L'élément HTML <code>&lt;label&gt;</code> représente une légende pour un objet d'une interface utilisateur.Cet élément inclut les attributs universels .</li>
+    </ul>
+
+<h3>Contenu tangible</h3>
+<p>Un contenu peut être dit tangible lorsqu'il n'est ni vide ni caché. </p>
+<p>Les éléments dont le modèle de contenu est de flux ou phrasé devraient toujours avoir au moins un noeud dont le contenu est tangible.</p>
+
+<h3>Contenu de formulaire</h3>
+    <p>Le contenu de formulaire est un ensemble d'éléments HTML qui permettent de créer des formulaires interactifs pour la saisie de données par les utilisateurs. Ces éléments sont utilisés pour collecter des informations, soumettre des données, etc.</p>
+    <p>Voici les éléments qui sont de ce contenu :</p>
+    <ul>
+        <li><code>&lt;button&gt;</code></li>
+        <li><code>&lt;fieldset&gt;</code></li>
+        <li><code>&lt;input&gt;</code></li>
+        <li><code>&lt;label&gt;</code></li>
+        <li><code>&lt;meter&gt;</code></li>
+        <li><code>&lt;object&gt;</code></li>
+        <li><code>&lt;output&gt;</code></li>
+        <li><code>&lt;progress&gt;</code></li>
+        <li><code>&lt;select&gt;</code></li>
+        <li><code>&lt;textarea&gt;</code></li>
+    </ul>
+    <p>Cette catégorie est divisée en plussieurs sous-catégorie qui sont les suivantes :</p>
+
+    <ul>
+        <li> éléments listés</li>
+        <p>Les éléments sont les suivantsn: <code>&lt;button&gt;</code>,<code>&lt;fieldset&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt;objects&gt;</code>,<code>&lt;output&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul>
+    <ul>
+        <li>éléments étiquetables</li>
+        <p>Ce sont des éléments qui peuvent  mis avec l'élément <code>&lt;label&gt;</code>,ce sont les suivants : <code>&lt;button&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt; meter&gt;</code>,<code>&lt;output&gt;</code>,<code>&lt;progress&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul> 
+    <ul>
+        <li>éléments participants à l'envoi de formulaire</li>
+        <p>Ce sont des éléments  pouvant être utilisés pour la construction  des données d'un formulaire quand celui-ci est envoyé . Ce sont : <code>&lt;button&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt;object&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code>.</p>
+    </ul>   
+    <ul>
+        <li>élément de ré-initialisation</li><code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul>
+    <footer class="rights">copyright by  DXCOPR.Do by PUGONDO MBANGUI Dieu merci @ Tous droits réservés </footer>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width,initial-scale=1">
+        <title>JavaScript</title>
+        <link rel="stylesheet" href="../CSS/JavaScript.css"/>
+        <script src="../SCRIPTS/JavaScript.js"></script>
+    </head>
+    <body>
+        <header class="header">
+    <div class="logo-container">
+        <img src="../IMG/LogoJavaScript.jpg" alt="Logo JavaScript" class="logo" width="100" height="100">
+    </div>
+    <nav class="header-nav">
+            <a href="index.html">Accueil</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="javascript.html" >JavaScript</a>
+            <a href="editeurH.html">Editeur de Code </a>
+    </nav>
+</header>
+<h1 class="title">JavaScript</h1>
+        <p>Bienvenue sur notre page de programation JavaScript ,comme son nom l'indique nous apprendrons le langage de programation JavaScript . </p>
+        <p>Tout d'abord commençons avec son introduction </p>
+        <p>Le langage de programmation JavaScript est un langage de programmation qui est connue pour sa syntaxe claire et lisible , il a été publié pour la première fois en 1995 par Brendan Eich ;c'est un langage de programmation utilisé dans plusieurs domaines tels que dans le domaine de la cybersécurité , programmation web </p>
+        <p>C'est un langage de programmation utilisé par des grandes entreprises tels que :  Google utilise JavaScript pour le développement de ses applications web et mobiles;Facebook l'utilse pour son interface utilisateur et son développement backend;Netflix qui a adopté JavaScript pour son interface utilisateur et son développement frontend;LinkedIn utilise JavaScript pour son interface utilisateur et son développement frontend;Microsoft utilise JavaScript dans ses produits tels que Office 365 et Azure.</p>
+        <p>Voici ici la documentation de ce langage de programmation </p>
+        <h2>Bases de la programmation JavaScript</h2>
+        <table>
+            <tr>
+                <th>Fonction</th>
+                <th>Description</th>
+                <th>Exemple</th>
+            </tr>
+            <tr>
+                <td>console.log()</td>
+                <td>Affiche du texte dans la console</td>
+                <td>console.log("Hello World")</td>
+            </tr>
+            <tr>
+                <td>alert()</td>
+                <td>Affiche une boîte de dialogue avec un message</td>
+                <td>alert("Bonjour")</td>
+            </tr>
+            <tr>
+                <td>document.getElementById()</td>
+                <td>Renvoie un élément HTML par son ID</td>
+                <td>var element = document.getElementById("monID")</td>
+            </tr>
+            <tr>
+                <td>addEventListener()</td>
+                <td>Ajoute un écouteur d'événement à un élément</td>
+                <td>element.addEventListener("click", function() { alert("Cliquez ici") })</td>
+            </tr>
+            <tr>
+                <td>setTimeout()</td>
+                <td>Exécute une fonction après un délai spécifié</td>
+                <td>setTimeout(function() { alert("Délai écoulé") }, 2000)</td>
+            </tr>
+            <tr>
+                <td>setInterval()</td>
+                <td>Exécute une fonction à intervalles réguliers</td>
+                <td>setInterval(function() { console.log("Intervalle") }, 1000)</td>
+            </tr>
+            <tr>
+                <td>JSON.parse()</td>
+                <td>Analyse une chaîne JSON et la convertit en objet JavaScript</td>
+                <td>var obj = JSON.parse('{"nom": "John", "age": 30}')</td>
+            </tr>
+            <tr>
+                <td>JSON.stringify()</td>
+                <td>Convertit un objet JavaScript en chaîne JSON</td>
+                <td>var jsonString = JSON.stringify({ nom: "John", age: 30 })</td>
+            </tr>   
+            <tr>
+                <td>fetch()</td>
+                <td>Effectue une requête HTTP et renvoie une promesse</td>
+                <td>fetch("https://api.example.com/data").then(response => response.json()).then(data => console.log(data))</td>
+            </tr>
+            <tr>
+                <td>Promise</td>
+                <td>Représente une opération asynchrone qui peut être résolue ou rejetée</td>
+                <td>new Promise((resolve, reject) => { /* code asynchrone */ })</td>
+            </tr>
+        </table>
+        <h2>Notion des Fonctions en JavaScript</h2>
+        <p>
+            En JavaScript, une fonction est un bloc de code réutilisable qui permet d’effectuer une tâche spécifique. On peut la déclarer avec le mot-clé <code>function</code> ou avec une expression de fonction (fonction anonyme ou fléchée). Les fonctions peuvent recevoir des paramètres et retourner une valeur avec <code>return</code>. Elles facilitent la structuration, la réutilisation et la maintenance du code.
+        </p>
+        <pre>
+    function addition(a, b) {
+        return a + b;
+    }
+    console.log(addition(2, 3)); // Affiche 5
+        </pre>
+
+        <h2>Notion des Objets en JavaScript</h2>
+        <p>
+            En JavaScript, un objet est une collection de propriétés, où chaque propriété est une paire clé-valeur. Les objets permettent de regrouper des données et des fonctions liées. On peut créer un objet en utilisant des accolades <code>{}</> ou le constructeur <code>new Object()</code>. Les objets sont fondamentaux pour la programmation orientée objet en JavaScript.
+        </p>
+        <pre>
+    const personne = {
+        nom: "John",
+        age: 30,
+        saluer: function() {
+            console.log("Bonjour, je m'appelle " + this.nom);
+        }
+    };
+    personne.saluer(); // Affiche "Bonjour, je m'appelle John"
+        </pre>
+        <h2>Notion des Tableaux en JavaScript</h2>
+        <p>
+            En JavaScript, un tableau est une structure de données qui permet de stocker une collection d'éléments. Les tableaux sont dynamiques et peuvent contenir des éléments de différents types. On peut créer un tableau en utilisant des crochets <code>[]</code> ou le constructeur <code>new Array()</code>. Les tableaux offrent de nombreuses méthodes pour manipuler les données, comme <code>push()</code>, <code>pop()</code>, <code>shift()</code>, <code>unshift()</code>, etc.
+        </p>
+        <pre>
+    const fruits = ["pomme", "banane", "orange"];
+    fruits.push("kiwi"); // Ajoute "kiwi" à la fin du tableau
+    console.log(fruits); // Affiche ["pomme", "banane", "orange", "kiwi"]
+        </pre>
+        <h2>Notion des Promesses en JavaScript</h2> 
+        <p>
+            En JavaScript, une promesse est un objet qui représente une opération asynchrone. Elle peut être dans l'un des trois états : en attente (pending), résolue (fulfilled) ou rejetée (rejected). Les promesses permettent de gérer les opérations asynchrones de manière plus lisible et structurée, en utilisant les méthodes <code>then()</code> et <code>catch()</code>.
+        </p>
+        <pre>
+    const promesse = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Opération réussie");
+        }, 2000);
+    });
+    promesse
+        .then(result => {   
+            console.log(result); // Affiche "Opération réussie" après 2 secondes
+        })
+        .catch(error => {
+            console.error("Erreur :", error);
+        });
+        </pre>
+        <h2>Notion des Événements en JavaScript</h2>
+        <p>
+            En JavaScript, les événements sont des actions ou des occurrences qui se produisent dans le navigateur, comme un clic de souris, une touche enfoncée, ou le chargement d'une page. On peut écouter et réagir à ces événements en utilisant la méthode <code>addEventListener()</code>. Les événements permettent d'interagir avec l'utilisateur et de rendre les pages web dynamiques.
+        </p>
+        <pre>
+    const bouton = document.getElementById("monBouton");
+    bouton.addEventListener("click", () => {
+        alert("Bouton cliqué !");
+    });
+        </pre>
+    <footer class="rights">copyright by  DXCOPR.Do by PUGONDO MBANGUI Dieu merci @ Tous droits réservés </footer>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../CSS/CSS.css" />
+    <script src="../SCRIPTS/CSS.js"></script>
+</head>
+<header>
+    <div class="logo-container">
+        <img src="../IMG/LogoCSS.jpg" alt="Logo CSS">
+    </div>
+
+<nav class="header-nav">
+            <a href="index.html">Accueil</a>
+            <a href="html.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="javascript.html" >JavaScript</a>
+            <a href="editeurH.html">Editeur de Code </a>
+    </nav>
+</header>
+<body>
+    <h1>Bienvenue dans notre documantation CSS </h1>
+    <p>Dans cette section, nous allons explorer les bases du CSS, comment l'utiliser pour styliser vos pages web et quelques astuces pour améliorer votre design.</p>
+     <h2>Historique</h2>
+    <p>Ce langage de dévloppement web a été crée par  Håkon Wium Lie et Bert Bos; Håkon Wium Lie  proposa pour la première fois le concept de CSS en 1994,alors qu'il travaillait avec Tim Berners-Lee au (CERN).Par la suite ,Bert Bos a également apporté des contributions importantes ,devenant co-auteur de la première recpmmandation CSS (CSS1) en 1996.Auparavant le développement des différentes parties de  la spécification <strong>CSS</strong> fut realisé de façon synchrone ,permettant d'avoir une version pour l'ensemble de la recommandation; ce pour cela vous avez peut-
+être entendu parlé du <Strong>CSS1,CSS2.1</Strong> voire CSS3  </p>
+    <h2>Qu'est-ce que le CSS ?</h2>
+     <p>Le CSS acronyme de <strong>Cascading Style Sheets </strong> est un langage de programmation fondamental dans la programmation web avec l'HTML et le JavaScript.Son rôle principal est de décrire la présentation des documents écrits en <strong>HTML</strong>;cést-à-dire que le CSS permet de de définir l'apparence visuele d'un site web , en séparant cette présentation du contenu structurel .</p>
+    <p>Le CSS permet de contrôler la mise en page, les couleurs, les polices, les marges, les espacements et bien d'autres aspects visuels d'une page web. Il est utilisé pour rendre les sites web attrayants et faciles à naviguer.</p>
+   <h2>Qu'est-ce que  est réellement le CSS ?</h2>
+   <p>De la même façon que l'HTML , le CSS n'est pas vraiment un langage de programmation.C'est un <em>langage de feuille  de style</em>,cela veut-dire qu'il permet de donner de styles sur différents éléments sélectionnés dans un document HTML .Par exemple,on peut sélectionner des éléments HTML qui sont tous des paragraphes et afficher le texte dans cette balise en couleur rouge  en code CSS :
+<style></style>
+<pre>
+    p { <br>
+        <br>color: red;<br>
+    }
+</pre>
+</style>
+<p>Ceci est un paragraphe affiché en rouge grâce au CSS.Où on vient de sélectionner juste une balise </p>
+</p>
+<h3>Selection de plusieurs balises</h3>
+<p>Il est aussi possible de sélectioner plusieurs balises en même temps ,pour une stylisation collective , il suffit de placer plusieurs sélecteurs et de les séparés avec des virgules.Par exemple :
+    <style></style>
+    <pre>
+        p ,
+        li,
+        h1, {<br>
+            <br>color: blue;<br>
+        }
+    </pre>
+    </style> Là comme vous pouvez le voir nous avons sélectionner plusieurs sélecteurs , puis nous les avons donnés comme couleur commune <strong class="blue">"blue"</strong> </p>
+
+    <h3>Les différents types de sélecteurs</h3>
+    <p>Il y a différent types de sélecteurs ci-haut comme vous pouvez le constater , grâce à cela nous voyons que les sélecteurs nous permettent de sélectionner des éléments HTML d'un type de donné dans un document HTML .Mais nous pouvons aussi faire des sélections spécifiques,voici certains types de sélecteurs qui sont les plus utilisés : </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom du sélecteur</th>
+                <th>Element sélectionné </th>
+                <th>Exemple</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Sélecteur de balise</td>
+            <td>Tous les éléments HTML d'un type donné</td>
+            <td> p pour sélectionner tous les <code>&lt;p&gt;</code></td>
+        </tr>
+        <tr>
+            <td>Sélecteur d'ID</td>
+            <td>Il sélectionne tous les éléments HTML avec une "id="</td>
+            <td>#my-id sélectionne <code>&lt;p id="my-id"&gt;</code> </td>
+        </tr>
+        <tr>
+            <td>Sélecteur de classe </td>
+            <td>Les éléments d'une page HTML qui ont une "class= " donné </td>
+            <td>.my-class sélectionne <code>&lt;p class="my-class"&gt;</code> et <code>&lt; a class="my-class!"&gt;</code> .</td>
+        </tr>
+        <tr>
+            <td>Sélecteur d'attributs </td>
+            <td>Il sélectionne un élément possédant un attribut donné .</td>
+            <td>img[src] sélection <code>&lt;img src=monimage.png"&gt;</code> mais pas <code>&lt;img&gt;</code>.</td>
+        </tr>
+        <tr>
+            <td>Sélecteur de pseudo-classe</td>
+            <td>Il sélectionne un élément en fonction de son état ou de sa position dans le document.</td>
+            <td>a:hover sélectionne un lien lorsque l'utilisateur passe la souris dessus.</td>
+        </tr>
+        <tr>
+            <td>Sélecteur de pseudo-élément</td>
+            <td>Il sélectionne une partie spécifique d'un élément.</td>
+            <td>p::first-line sélectionne la première ligne d'un paragraphe.</td>
+        </tr>
+        <tr>
+            <td>Sélecteur universel</td>
+            <td>Il sélectionne tous les éléments d'un document.</td>
+            <td>* sélectionne tous les éléments.</td>
+        </tr>
+    </table>
+    <p>Pour que tout cela puisse fonctionner il faut tout d'abord appliquer le CSS à un document HTML ,sinon le CSS n'affectera pas la mise en forme de la page web dans le navigateur </p>
+    <h2>Comment appliquer le CSS à un document HTML ?</h2>
+    <p>
+        <ol>
+            <li>Ouvrez votre fichier index.html et copiez votre lien vers votre CSS quelques part dans la balise <code>&lt;head&gt;</code> ,puis sauvegardez index.html puis vous actualisez votre page web dans votre navigateur par défaut cela affichera une stylisation de votre page web.</li>
+            Si le paragraphe s'affiche en rouge c'est que le CSS a bien été appliqué .</li>
+            <li>Vous pouvez aussi ajouter le CSS directement dans la balise <code>&lt;style&gt;</code> dans la balise <code>&lt;head&gt;</code> de votre document HTML .</li>
+        </ol>
+
+    </p>
+    <h2>Les polices et les textes </h2>
+    <p>Maintenat que nous avons vus quelques bases de la stylisation CSS , ajoutons quelques règles et informations à notre fichier HTML  style.css . Tout d'abord améliorons notre police et le texte </p>
+    <ol>
+        <li>Pour commencer à changer le modéle de texte que vous voulez  on déclare d'abord le sélecteur   <strong>font-family</strong> qui répresente les polices qu'on veut utiliser pour les textes </li>
+        <li>Pour la taille de la police nous avons le sélecteur <strong>font-size</strong> qui nous permet de définir la taille que nous voulons pour notre texte ,il faut savoir que la granndeur est définie en pixels </li>
+    </ol>
+    <p>Ces sélecteurs de base définnise une police différente que la police par défaut  et de la taille de base pour toute la page  </p>
+    <p>voici un exemple de code CSS pour changer la police et la taille du texte dans votre fichier style.css :</p>
+<pre>
+body {
+    font-family: Arial, sans-serif; /* Change la police de la page */
+    font-size: 16px; /* Définit la taille de la police */
+}
+</pre>
+     Tout ce qui entre les accolades <code>{}</code> est le code CSS qui va s'appliquer à la balise <code>&lt;body&gt;</code> de votre document HTML .
+     Et tout ce qui  est entre /* et * / est un commentaire qui n'est pas pris en compte par le navigateur mais qui peut être utile pour expliquer le code ou pour laisser des notes pour vous-même ou pour d'autres développeurs.
+     Ensuite , fixons les tailles des différents textes contenus dans le corps du HTML .Nous allons également centrer le texte du titre et donner une taille de ligne et un espacement de caractère  entre les lettres pour le contenu du corps (body) du document soit plus lisible ; voici un exemple de cela :
+<pre>
+h1 {
+    text-align: center; /* Centre le titre */
+    font-size: 20px; /* Définit la taille du titre */
+}
+p {
+    line-height: 1.5; /* Définit l'espacement entre les lignes */
+    letter-spacing: 1px; /* Définit l'espacement entre les lettres */
+}
+</pre>
+        dans cet exemple nous avons utilisé le sélecteur <strong>h1</strong> pour styliser le titre de la page et le sélecteur <strong>p</strong> pour styliser les paragraphes du corps du document HTML .Nous avons aussi utilisé le séleteur <strong>text-align</strong> pour centrer le titre de la page et le sélecteur  <strong>font-size</strong> pour définir la taille de la police du texte du titre .Nous avons aussi utilisé le sélecteur <strong>line-height</strong> pour définir l'espacement entre les lignes du texte et le sélecteur <strong>letter-spacing</strong> pour définir l'espacement entre les lettres du texte .Vous pouvez ajuster ces valeurs en px (pixels) ou en em (unités relatives à le taille de la police ); comme vous le voulez pour votre page web.Cela voous donnera un affichage comme ceci :
+        
+    </p>
+    <h2>Les boîtes</h2>
+   <p>Dans le CSS comme vous le voyez tout tourne majoritairement autour des boîtes : pour définir leurs tailles , leurs couleurs, leurs positions etc.Les éléments HTML  d'une page web ,peuvent pour la plupart , être vus comme des boîtes superposées les unes sur les auters .   </p>
+   <p>C'est pour cela que l'architecture  du CSS ;est principalement basée sur une architecture des boîtes.Chacun de ces blocs sélecteurs prend un certain esoace sur la page , de cette façon nous avons :
+    <ol>
+        <li>padding : est utilisé pour modifier l'espace autour , proche du contenu ;par exemple l'espace autour du texte d'un paragraphe .</li>
+        <li>border : est utilisé pour modifier la ligne qui est juste  autour du padding ( en français cela correspond à la bordure)</li>
+        <li>margin : est utilisé pour modofier l'espace  extérieur , autour d'un élément( en farnçais cela correspond à la marge)</li> 
+    </ol>
+    Dans cette section nous avons ,nous utilisons aussi :
+    <ol>
+        <li>width : pour la modification de la largeur de l'élément</li>
+        <li>background-color : pour la modification de la couleur derrière le contenu de l'élément et son padding </li>
+        <li>color : pour choisir la couleur du contenu de l'élément ,généralement du texte.</li>
+        <li>text-shadow : affiche une ombre portée sur le texte à l'intérieur d'un élément  </li>
+        <li>display : qui définit le mode d'affichage de la page sur une interface donnnée </li>
+    </ol>
+    </p>
+    <p>Allons-y : ajoutons un peu plus de CSS à notre page web ! Continuons à ajouter des sélecteurs à notre fichier HTML à la suite des autres sélecteurs précédent .Il ne faut pas avoir peur de s'exercer des temps en temps , cela vous permettras d'expérimenter et de tester différentes  valeurs pour voir  ce qu'elles font . </p>
+    <h3>Changer la couleur de la page </h3>
+    <p>Cette règle permet de définir la couleur de l'arriére plan de tout la page web .</p>
+    <style></style>
+    <pre>
+        <br>body {<br>
+            <br>background-color: #f0f0f0; /* Change la couleur de fond de la page */<br>
+        }
+    </pre>
+    </style>
+    <h3>Mettre en forme le corps de la page  </h3>
+    <p>Nous allons maintenant ajouter des styles pour le corps de la page , en utilisant les sélecteurs <strong>padding</strong>, <strong>border</strong>, <strong>margin</strong>, <strong>width</strong>, <strong>background-color</strong>, <strong>color</strong>, <strong>text-shadow</strong> et <strong>display</strong>. Voici un exemple de code CSS pour cela :</p>
+    <style></style>
+    <pre>
+        <br>body {<br>
+            <br>padding: 20px; /* Ajoute de l'espace autour du contenu */<br>
+            <br>border: 1px solid #ccc; /* Ajoute une bordure autour du corps */<br>
+            <br>margin: 0 auto; /* Centre le corps de la page */<br>
+            <br>width: 80%; /* Définit la largeur du corps de la page */<br>
+            <br>background-color: #ffffff; /* Change la couleur de fond du corps */<br>
+            <br>color: #333333; /* Change la couleur du texte dans le corps */<br>
+            <br>text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée au texte */<br>
+            <br>display: block; /* Définit le mode d'affichage du corps */<br>
+        }
+    </pre>
+    </style>
+    
+    <h3>Positionner le titre et le mettre en forme </h3>
+    <p>Nous allons maintenant styliser notre titre et le donner une forme </p>
+    <style></style>
+    <pre>   
+    <br>h1 {<br>
+            <br>text-align: center; /* Centre le titre */<br>
+            <br>font-size: 24px; /* Définit la taille du titre */<br>
+            <br>color: #2c3e50; /* Change la couleur du titre */<br>
+            <br>margin-bottom: 20px; /* Ajoute de l'espace en dessous du titre */<br>
+        }
+    </pre>
+    </style>
+    
+    <h3>Centrer l'image</h3>
+    <p>Nous allons aussi center notre image </p>
+    <style></style>
+    <pre>
+    img { 
+        display: block; /* Définit l'image comme un bloc */
+        margin: 0 auto; /* Centre l'image horizontalement */
+    }
+    </pre>
+    </style>
+    <h2>Conclusion</h2>
+    <p>Dans cette section, nous avons exploré les bases du CSS, comment l'utiliser pour styliser vos pages web et quelques astuces pour améliorer votre design. Le CSS est un outil puissant qui vous permet de créer des sites web attrayants et fonctionnels. N'hésitez pas à expérimenter avec différentes propriétés et valeurs pour personnaliser davantage vos pages.</p>
+    <p>merci de votre attention et bonne chance dans vos projets de développement web !</p>
+  <footer class="rights">copyright by  DXCOPR.Do by PUGONDO MBANGUI Dieu merci @ Tous droits réservés </footer>
+</p>
+</body>
+</html>

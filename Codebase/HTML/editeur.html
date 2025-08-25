@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editeur de code </title>
+    <link rel="stylesheet" href="../CSS/editor.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="../HTML/index.html">Accueil</a>
+            <a href="../HTML/HTML.html">HTML</a>
+            <a href="../HTML/CSS.html">CSS</a>
+            <a href="../HTML/javascript.html">JavaScript</a>
+            <a href="../HTML/editeurH.html">Editeur de Code </a>
+        </nav>
+    <section>
+        <div class="code">
+            <label><i class="fab fa-html5"></i>HTML</label>
+            <textarea  oninput="rafraichir()" placeholder="Entrez votre code HTML ici" id="code-HTML" cols="30" rows="10"></textarea>
+            <label ><i class="fab fa-css3-alt"></i>CSS</label>
+            <textarea  oninput="rafraichir()" placeholder="Entrez votre code CSS ici" id="code-CSS" cols="30" rows="10"></textarea>
+            <label ><i class="fab fa-js"></i>JavaScript</label>
+            <textarea  oninput="rafraichir()" placeholder="Entrez votre code JavaScript ici" id="code-JS" cols="30" rows="10"></textarea>
+        </div>
+        <iframe id="res"></iframe>
+    </section> 
+    <script>
+        function rafraichir(){
+            var code_HTML = document.getElementById("code-HTML").value;
+            var code_CSS = "<style>" + document.getElementById("code-CSS").value + "</style>";
+            var code_JS = "<scri"+"pt>" + document.getElementById("code-JS").value + "</scri"+"pt>";
+            var page = document.getElementById('res').contentWindow.document;
+            page.open();
+            page.write(code_HTML + code_CSS + code_JS);
+            page.close();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Mettre un surlignement dans  le lien actif dans la navigation
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        if (window.location.pathname.endsWith(link.getAttribute('href'))) {
+            link.style.fontWeight = 'bold';
+            link.style.textDecoration = 'underline';
+        }
+    });
+});
+    </script>   
+</body>
+</html>
