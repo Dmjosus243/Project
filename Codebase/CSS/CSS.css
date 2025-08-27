@@ -4,7 +4,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 0 24px 0;
-    background: #2c3e50;
+    background: linear-gradient(90deg, #2c3e50 60%, #1abc9c 100%);
     color: #fff;
     margin-bottom: 30px;
     border-radius: 0 0 18px 18px;
@@ -41,9 +41,9 @@ header {
 
 .header-nav a:hover,
 .header-nav a.active {
-    background: #1abc9c;
-    color: #2c3e50;
-    box-shadow: 0 2px 8px rgba(26,188,156,0.10);
+    background: linear-gradient(90deg, #1abc9c 60%, #16a085 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(26,188,156,0.15);
 }
 
 h1 {
@@ -75,15 +75,16 @@ ol, ul {
     padding-left: 30px;
 }
 
-ul li, ol li {
-    background: #fff;
-    border-radius: 6px;
+ul li, ol li, .video-list li {
+    background: rgba(255,255,255,0.75);
+    /* Fallback for browsers not supporting backdrop-filter */
+    backdrop-filter: blur(2px);
     margin-bottom: 8px;
     padding: 7px 14px;
-    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
     transition: background 0.2s;
 }
-ul li:hover, ol li:hover {
+ul li:hover, ol li:hover, .video-list li:hover {
     background: #e8f8f5;
 }
 
@@ -125,18 +126,6 @@ img {
     margin-bottom: 30px;
 }
 
-.video-list li {
-    margin-bottom: 10px;
-    background: #fff;
-    border-radius: 6px;
-    padding: 7px 14px;
-    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
-    transition: background 0.2s;
-}
-.video-list li:hover {
-    background: #e8f8f5;
-}
-
 .video-list a {
     color: #2980b9;
     text-decoration: underline;
@@ -170,6 +159,12 @@ pre {
     display: block;
     overflow-x: auto;
     box-shadow: 0 1px 4px rgba(44,62,80,0.10);
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    width: 100%;
+    padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -207,3 +202,7 @@ pre {
         font-size: 0.95em;
     }
 }
+
+/* À ajouter dans le <head> HTML :
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+*/
