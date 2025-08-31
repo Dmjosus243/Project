@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
-});
 
-// Cinématique de bienvenue
-document.addEventListener('DOMContentLoaded', function() {
+    // Cinématique de bienvenue
     const welcomeDiv = document.createElement('div');
     welcomeDiv.textContent = "Bienvenue sur Langage Bags Web !";
     welcomeDiv.style.position = 'fixed';
