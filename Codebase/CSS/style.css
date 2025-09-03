@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -111,6 +112,42 @@ footer {
   margin-top: 2rem;
   font-size: 1rem;
   letter-spacing: 0.5px;
+}
+
+/* Images et vidéos fluides */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Titres adaptatifs */
+@media (max-width: 600px) {
+  h1, .title {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Listes et tableaux adaptatifs */
+@media (max-width: 600px) {
+  ul, ol {
+    padding-left: 1.2rem;
+  }
+  table {
+    width: 100%;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    display: block;
+  }
+  th, td {
+    padding: 0.4em 0.6em;
+  }
 }
 
 /* Responsive styles */
