@@ -22,4 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.remove('clicked');
         });
     });
+    //Création d'un nouvel élément pour un message 
+    const welcomeMessage = document.createElement('h1');
+    //Ajout du message 
+    welcomeMessage.textContent = 'Bienvenue sur La Documentation JavaScrpit !';
+    document.body.appendChild(welcomeMessage);
 });
