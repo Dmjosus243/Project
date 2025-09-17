@@ -29,7 +29,7 @@ h1{
     margin: 0;
     padding: 0;
 }
-contacts{
+.contacts{
     background-color: antiquewhite;
     padding: 10px 0 25px 0;
     text-align: center;
@@ -38,4 +38,22 @@ contacts{
     margin: auto;
     border-radius: 10px;
     box-shadow: inset;
+}
+img{
+    width: 175px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px bisque;
+    margin: 15px;
+}
+h2{
+    font-size: X-large;
+    margin: 0;
+    padding: 0;
+}
+label{
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(47, 47, 201);
+    color: rgb(78, 72, 72);
 }
