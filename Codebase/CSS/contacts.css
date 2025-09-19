@@ -40,8 +40,8 @@ h1{
     box-shadow: inset;
 }
 img{
-    width: 175px;
-    height: 150px;
+    width: 75px;
+    height: 50px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px bisque;
     margin: 15px;
@@ -60,4 +60,11 @@ label{
 .commentaires{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:rgb(78, 72, 72);
+}
+.message{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(78, 72, 72);
+    resize: none;
+    scrollbar-width: thin;
+    
 }
