@@ -49,4 +49,9 @@ while ($row = $stmt->fetch()) {
     echo $row['nom'] . " - " . $row['email'] . "<br>";
 }
 */
+
+// filepath (exemple d'utilisation dans un script)
+<?php
+$pdo = require __DIR__ . '/pHp/db.php';
+// puis utiliser $pdo->prepare(...), etc.
 ?>
