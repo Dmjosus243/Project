@@ -51,7 +51,6 @@ while ($row = $stmt->fetch()) {
 */
 
 // filepath (exemple d'utilisation dans un script)
-<?php
 // Connexion PDO réutilisable pour le projet.
 // Configure via variables d'environnement en production.
 
@@ -79,4 +78,3 @@ try {
 
 // Retourne l'instance PDO pour inclusion : $pdo = require __DIR__ . '/db.php';
 return $pdo;
-?>
