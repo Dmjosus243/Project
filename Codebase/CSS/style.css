@@ -23,6 +23,14 @@ body {
 .logo:hover {
   transform: scale(1.08) rotate(-2deg);
 }
+.connection {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-top: -10px;
+}
 
 nav {
   background: linear-gradient(90deg, #2d3e5a 70%, #4e5d6c 100%);
