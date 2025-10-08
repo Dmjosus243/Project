@@ -1,0 +1,172 @@
+:root{
+  --bg: linear-gradient(180deg,#f6fbff,#e9f6fb);
+  --card: rgba(255,255,255,0.9);
+  --accent: #2d3e5a;
+  --accent-2: #4e5d6c;
+  --cta: #5a57d6;
+  --danger: #e04f5f;
+  --muted: #6d7b83;
+  --radius: 14px;
+  --gap: 12px;
+  --max-width: 420px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+/* wrapper centré */
+.login-wrap{
+  width:100%;
+  max-width: calc(var(--max-width) + 2rem);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2rem;
+}
+
+/* carte */
+.login-card{
+  width:100%;
+  max-width: var(--max-width);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding:1.6rem;
+  box-shadow: 0 12px 30px rgba(13,24,42,0.12);
+  border: 1px solid rgba(45,62,90,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.login-card:hover{ transform: translateY(-4px); box-shadow: 0 20px 40px rgba(13,24,42,0.14); }
+
+/* titre */
+.login-card h1{
+  margin:0 0 0.6rem 0;
+  font-size:1.4rem;
+  color:var(--accent);
+  letter-spacing:0.2px;
+  text-align:center;
+}
+
+/* description */
+.login-card p.lead{
+  margin:0 0 1rem 0;
+  color:var(--muted);
+  font-size:0.95rem;
+  text-align:center;
+}
+
+/* form layout */
+form.login-form{ display:flex; flex-direction:column; gap:var(--gap); }
+
+/* field */
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+label{
+  font-weight:600;
+  font-size:0.92rem;
+  color:var(--accent);
+}
+
+/* inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(45,62,90,0.08);
+  background: rgba(255,255,255,0.95);
+  font-size:1rem;
+  color:var(--accent);
+  outline:none;
+  transition: box-shadow 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+input::placeholder{ color: rgba(45,62,90,0.35); }
+
+/* focus visible */
+input:focus{
+  border-color: var(--cta);
+  box-shadow: 0 8px 24px rgba(90,87,214,0.08);
+  transform: translateY(-1px);
+}
+
+/* actions row */
+.actions{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-top:4px;
+}
+.actions .remember{ display:flex; align-items:center; gap:8px; color:var(--muted); font-size:0.92rem; }
+.actions a{ color:var(--accent-2); text-decoration:none; font-weight:600; font-size:0.92rem; }
+.actions a:hover{ text-decoration:underline; }
+
+/* bouton principal */
+button[type="submit"]{
+  appearance:none;
+  border:0;
+  padding:11px 14px;
+  border-radius:10px;
+  background: linear-gradient(90deg,var(--cta), var(--accent-2));
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow: 0 10px 26px rgba(90,87,214,0.12);
+  transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+  width:100%;
+  font-size:1rem;
+}
+button[type="submit"]:hover{ transform: translateY(-3px); opacity:0.98; box-shadow: 0 14px 34px rgba(90,87,214,0.16); }
+
+/* small text under form */
+.form-foot{
+  margin-top:0.6rem;
+  text-align:center;
+  font-size:0.92rem;
+  color:var(--muted);
+}
+.form-foot a{ color:var(--accent-2); font-weight:600; text-decoration:none; }
+.form-foot a:hover{text-decoration:underline}
+
+/* error helper */
+.error{
+  color:var(--danger);
+  font-size:0.9rem;
+  margin-top:4px;
+}
+
+/* responsive adjustments */
+@media (max-width: 560px){
+  body{ padding:1rem; }
+  .login-card{ padding:1.2rem; border-radius:12px; }
+  .login-card h1{ font-size:1.15rem; }
+  input[type="text"], input[type="password"]{ padding:10px 12px; font-size:0.98rem; }
+  button[type="submit"]{ padding:10px; font-size:0.98rem; }
+}
+
+/* very small */
+@media (max-width: 360px){
+  .login-card{ padding:1rem; }
+  label{ font-size:0.9rem; }
+  .actions{ flex-direction:column; align-items:stretch; gap:6px; }
+  .actions a{ text-align:center; }
+}
+
+/* accessibility: respect reduce motion */
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; animation: none !important; }
+}
